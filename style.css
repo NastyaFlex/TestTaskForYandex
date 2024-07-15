@@ -1,0 +1,252 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+@font-face {
+	font-family: 'Golos'; 
+	src: url(fonts/golos.ttf)
+}
+@font-face {
+    font-family: 'Golos-Regular'; 
+    src: url(fonts/golos-regular.ttf)
+}
+@font-face {
+    font-family: 'Golos-Medium'; 
+    src: url(fonts/golos-medium.ttf)
+}
+@font-face {
+	font-family: 'Merriweather'; 
+	src: url(fonts/merriweather.ttf)
+}
+.bock-header {
+    display: flex;
+    align-items: center;
+    padding-top: 11px;
+}
+.name-logo {
+    color: #595653;
+    font-family: 'Golos';
+    font-size: 16px;
+}
+.header, .block-offer {
+    background-color: #e8dcd2;
+    background-blend-mode: overlay;
+    background-image: url(img/background.png);
+}
+.offer-text-1, .offer-text-2, .offer-text-3 {
+    margin: 0;
+    font-size: 60px;
+    color: #313131;
+    font-family: 'Merriweather';
+}
+.offer-text-2 {
+    margin-left: 94px;
+}
+.offer-text-3 {
+    margin-left: 38px; 
+}
+.offer-small-text-1, .offer-small-text-2 {
+    color: #313131;
+    font-size: 18px;
+    font-family: 'Golos-Regular';
+}
+.offer-small-text-1 {
+    margin-left: 55px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.offer-small-text-2 {
+    margin-left: -24px;
+}
+.offer-buttons {
+    width: 263px;
+    height: 72px;
+    border: 3px solid #1F1F1F;
+    font-size: 16px;
+    border-radius: 50px;
+    font-family: 'Golos-Medium';
+    position: relative;
+    z-index: 2;
+}
+.offer-button-1 {
+    color: #ffffff;
+    background-color: #1F1F1F;
+}
+.offer-button-2 {
+    margin-left: 12px;
+    color: #1F1F1F;
+    background: none;
+}
+.offer-button-1:hover{
+    background-color: #FBCE51;
+    color: #1F1F1F;
+    border: 3px solid #FBCE51;
+}
+.offer-button-2:hover {
+    background-color: #1F1F1F;
+    color: #ffffff;
+    border: 3px solid #1F1F1F;
+}
+.block-img {
+    width: 660px;
+    height: 660px;
+    margin-left: 64px;
+    margin-bottom: 100px;
+}
+.yellow-circle {
+    width: 660px;
+    height: 660px;
+    background-color: #FBCE51;
+    border-radius: 100%;
+    margin-left: 64px;
+    margin-bottom: 100px;
+    position: fixed;
+}
+.block-offer {
+    display: flex;
+    justify-content: center;
+    padding-top: 44px;
+}
+.block-offer-img {
+    position: relative;
+    margin-top: -160px;
+}
+.img-city {
+    margin-top: 330px;
+    margin-left: -776px;
+    position: absolute;
+    z-index: 1;
+}
+.img-line {
+    margin-top: 319px;
+    margin-left: -778px;
+    position: absolute;
+    z-index: 1;
+}
+.img-horse {
+    margin-top: 542px;
+    position: absolute;
+    z-index: 2;
+    margin-left: 175px;
+}
+.img-pawn {
+    margin-left: 575px;
+    margin-top: 616px;
+    position: absolute;
+    z-index: 2;
+}
+.img-king {
+    position: absolute;
+    margin-top: 324px;
+    margin-left: 68px;
+}
+.img-queen {
+    position: absolute;
+    margin-top: 218px;
+    margin-left: 406px;
+}
+.img-words {
+    margin-left: -59px;
+    margin-top: -59px;
+}
+.running-line {
+    background-color: #F54932;
+    font-size: 22px;
+    color: #ffffff;
+    height: 60px;
+    font-family: 'Merriweather';
+    display: flex;
+    align-items: center;
+}
+@media (max-width: 1366px) {
+    .left-indentation {
+        margin-left: 49px;
+    }
+    .block-offer {
+        overflow-x: hidden;
+    }
+}
+@media (max-width: 375px) {
+    .left-indentation {
+        margin-left: 20px;
+    }
+    .offer-small-text-1 {
+        margin-left: 0px;
+    }
+    .offer-small-text-2 {
+        margin-left: 5px;
+    }
+    .offer-small-text-1 br {
+        display: none;
+    }
+    .offer-text-1, .offer-text-2, .offer-text-3 {
+        font-size: 36px;
+        margin-top: -16px;
+    }
+    .offer-text-2 {
+        margin-left: 64px;
+    }
+    .offer-text-3 {
+        margin-left: 33px;
+    }
+    .offer-buttons {
+        width: 335px;
+        height: 47px;
+        margin-top: 52px;
+    }
+    .block-offer {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .block-img {
+        width: 297px;
+        height: 297px;
+        margin-top: 75px;
+        margin-left: 30px;
+    }
+    .yellow-circle {
+        width: 300px;
+        height: 300px;
+        margin-top: 15px;
+        margin-left: 28px;
+    }
+    .img-city {
+        width: 885px;
+        margin-left: -430px;
+        margin-top: 162px;
+    }
+    .img-line {
+        width: 885px;
+        margin-left: -442px;
+        margin-top: 158px;
+    }
+    .img-queen {
+        margin-top: 125px;
+        margin-left: 200px;
+        height: 114px;
+        transform: rotate(8deg);
+    }
+    .img-king {
+        margin-top: 172px;
+        margin-left: 30px;
+        height: 114px;
+    }
+    .img-horse {
+        margin-left: 115px;
+        margin-top: 284px;
+        height: 114px;
+    }
+    .offer-button-1 {
+        margin-top: -7px;
+    }
+    .offer-button-2 {
+        margin-top: 14px;
+        margin-left: 0px;
+    }
+    .img-words {
+        width: 350px;
+        margin-left: -25px;
+        margin-top: -24px;
+    }
+}
