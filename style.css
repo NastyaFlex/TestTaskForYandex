@@ -100,12 +100,13 @@ body {
     border-radius: 100%;
     margin-left: 64px;
     margin-bottom: 100px;
-    position: fixed;
+    position: absolute;
 }
 .block-offer {
     display: flex;
     justify-content: center;
     padding-top: 44px;
+    overflow-x: hidden;
 }
 .block-offer-img {
     position: relative;
@@ -158,12 +159,35 @@ body {
     display: flex;
     align-items: center;
 }
+.text-information {
+    font-size: 36px;
+    font-family: 'Merriweather';
+}
+.red-text {
+    color: #F54932;
+    font-weight: 600;
+}
+.information-for-window {
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+
+}
+@media (min-width: 1366px) {
+    .information-for-phone {
+        display: none;
+    }
+}
 @media (max-width: 1366px) {
     .left-indentation {
         margin-left: 49px;
     }
     .block-offer {
         overflow-x: hidden;
+    }
+    .information-for-window {
+        display: flex;
+        justify-content: center;
     }
 }
 @media (max-width: 375px) {
@@ -210,6 +234,7 @@ body {
         height: 300px;
         margin-top: 15px;
         margin-left: 28px;
+        position: absolute;
     }
     .img-city {
         width: 885px;
@@ -248,5 +273,27 @@ body {
         width: 350px;
         margin-left: -25px;
         margin-top: -24px;
+    }
+    .information-for-window {
+        display: none;
+    }
+    .running-line {
+        width: 375px;
+        height: 38px;
+        font-size: 16px;
+    }
+    .img-people {
+        width: 335px;
+    }
+    .text-information-for-phone {
+        font-size: 28px;
+        font-family: 'Merriweather'; 
+    }
+    .information-for-phone {
+        display: initial;
+        margin-top: 48px;
+    }
+    .block-informations {
+        margin-left: 20px;
     }
 }
