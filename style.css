@@ -159,7 +159,7 @@ body {
     display: flex;
     align-items: center;
 }
-.text-information {
+.text-information, .session-text {
     font-size: 36px;
     font-family: 'Merriweather';
 }
@@ -173,7 +173,56 @@ body {
     gap: 120px;
 
 }
-@media (min-width: 1366px) {
+.block-informations {
+    margin-top: 80px;
+}
+table {
+    border-collapse: collapse;
+    font-size: 38px;
+}
+.line-bottom {
+    border-bottom: 2px solid #D0D0D0;
+    width: 350px;
+}
+.text-first-column, .text-second-column {
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.text-second-column {
+    border-left: 2px solid #D0D0D0;
+}
+.block-information-about-session {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    margin-top: 50px;
+}
+.information-about-session-text {
+    display: flex;
+    flex-direction: column;
+    width: 704px;
+}
+.text-first-column {
+    font-family: 'Golos-Regular';
+    color: #313131;
+    padding-left: 0px;
+}
+.text-second-column {
+    font-family: 'Golos';
+    color: #313131; 
+    padding-left: 15px;
+}
+.red-line {
+    text-decoration-color: red;
+}
+.administration {
+    color: #3057A2;
+    font-family: 'Golos-Regular';
+    font-size: 20px;
+    text-decoration: none;   
+}
+@media (min-width: 376px) {
     .information-for-phone {
         display: none;
     }
@@ -295,5 +344,17 @@ body {
     }
     .block-informations {
         margin-left: 20px;
+    }
+    .block-information-about-session {
+        flex-direction: column;
+    }
+    .session-text {
+        width: 335px;
+    }
+    .img-person {
+        width: 420px;
+    }
+    .session-text {
+        font-size: 28px;
     }
 }
