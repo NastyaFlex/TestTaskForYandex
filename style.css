@@ -159,7 +159,7 @@ body {
     display: flex;
     align-items: center;
 }
-.text-information, .session-text {
+.text-information {
     font-size: 36px;
     font-family: 'Merriweather';
 }
@@ -171,14 +171,20 @@ body {
     display: flex;
     justify-content: center;
     gap: 120px;
-
+}
+.block-session-text {
+    font-size: 36;
+    width: 704px;
+    font-family: 'Merriweather';
 }
 .block-informations {
     margin-top: 80px;
 }
-table {
+.session-table {
     border-collapse: collapse;
     font-size: 38px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 .line-bottom {
     border-bottom: 2px solid #D0D0D0;
@@ -201,7 +207,6 @@ table {
 .information-about-session-text {
     display: flex;
     flex-direction: column;
-    width: 704px;
 }
 .text-first-column {
     font-family: 'Golos-Regular';
@@ -225,6 +230,12 @@ table {
 @media (min-width: 376px) {
     .information-for-phone {
         display: none;
+    }
+    .session-table-phone {
+        display: none;
+    }
+    .block-session-text {
+        font-size: 28px;
     }
 }
 @media (max-width: 1366px) {
@@ -348,13 +359,34 @@ table {
     .block-information-about-session {
         flex-direction: column;
     }
-    .session-text {
+    .block-session-text {
+        font-size: 28px;
         width: 335px;
     }
     .img-person {
-        width: 420px;
+        width: 335px;
     }
-    .session-text {
-        font-size: 28px;
+    .text-first-column-phone-version {
+        font-family: 'Golos-Regular';
+        color: #313131;
+        font-size: 20px;
+    }
+    .text-second-column-phone-version {
+        font-family: 'Golos';
+        color: #313131;
+        font-size: 20px;
+    }
+    .session-table {
+        display: none;
+    }
+    .administration {
+        font-size: 18px;
+    }
+    .grey-line {
+        width: 335px;
+        border: 1px solid #D0D0D0;
+    }
+    .session-table-phone {
+        line-height: 1.6em;
     }
 }
