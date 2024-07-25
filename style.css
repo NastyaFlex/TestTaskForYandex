@@ -476,4 +476,24 @@ body {
     .block-stages {
         display: none;
     }
+    .stages-text-1-phone {
+        font-size: 36px;
+        font-family: 'Merriweather';
+        color: #313131;
+        margin-bottom: 10px;
+    }
+    .stages-link-phone {
+        color: #3057A2;
+        font-family: 'Golos-Regular';
+        font-size: 18px;
+        text-decoration: none;
+    }
+    .img-plane-phone {
+        width: 317px;
+    }
+    .carousel {
+        width: 335px;
+        height: 300px;
+        background-color: #D0D0D0;
+    }
 }
