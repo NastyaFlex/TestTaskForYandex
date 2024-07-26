@@ -493,11 +493,28 @@ body {
     }
     .carousel {
         width: 335px;
-        height: 300px;
+        height: 230px;
         background-color: #D0D0D0;
+        padding-top: 70px;
     }
-    #text-carousel {
+    .carousel-first-line, .carousel-second-line {
+        display: flex;
+        justify-content: center;
+    }
+    #text-stages-carousel-first-line, #text-stages-carousel-second-line {
         font-family: 'Golos-Medium';
-        font-size: 18px; 
+        font-size: 18px;
+        width: 243px;
+        margin-top: 0px;
+        margin-left: 18px;
+    }
+    .carousel-second-line {
+        margin-top: 20px;
+    }
+    #circle-white-first-line, #circle-white-second-line {
+        width: 36px;
+        height: 36px;
+        border-radius: 100px;
+        background-color: #ffff;
     }
 }
