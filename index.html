@@ -196,20 +196,25 @@
                 <img src="img/plane.png" alt="plane" class="img-plane-phone">
                 <div class="carousel">
                     <div class="carousel-first-line">
-                        <div id="circle-white-first-line">
-                            <div><p class="numbers-stages-first-line"></p></div>
-                        </div>
+                        <div id="circle-white-first-line"></div>
                         <p id="text-stages-carousel-first-line"></p>
                     </div>
                     <div class="carousel-second-line">
-                        <div id="circle-white-second-line">
-                            <div><p class="numbers-stages-second-line"></p></div>
-                        </div>
+                        <div id="circle-white-second-line"></div>
                         <p id="text-stages-carousel-second-line"></p>
                     </div>
                 </div>
-                <button onclick="back()">назад</button>
-                <button onclick="next()">дальше</button>
+                <div id="carousel-buttons">
+                    <img src="img/button-left.png" alt="" onclick="back()" id="button-back">
+                    <div class="levels-carousel">
+                        <img src="img/no-active.png" alt="" id="level-list">
+                        <img src="img/no-active.png" alt="" id="level-list">
+                        <img src="img/no-active.png" alt="" id="level-list">
+                        <img src="img/no-active.png" alt="" id="level-list">
+                        <img src="img/no-active.png" alt="" id="level-list">
+                    </div>
+                    <img src="img/button-right.png" alt="" onclick="next()" id="button-next">
+                </div>
             </div>
         </div>
     </main>
