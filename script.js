@@ -9,6 +9,9 @@ let textStagesCarouselSecondLine = document.getElementById('text-stages-carousel
 let circleWhiteFirstLine = document.getElementById('circle-white-first-line');
 let circleWhiteSecondLine = document.getElementById('circle-white-second-line');
 
+let circleWhiteFirstLine = document.getElementById('circle-white-first-line');
+let circleWhiteSecondLine = document.getElementById('circle-white-second-line');
+
 let textStages = ['Строительство железнодорожной магистрали Москва-Васюки ','Поднятие сельского хозяйства в радиусе на тысячу километров: производство овощей, фруктов, икры, шоколадных конфет', 'Строительство дворца для турнира', 'Постройка сверхмощной радиостанции для передачи всему миру сенсационных результатов', 'Создание аэропорта «Большие Васюки» с регулярным отправлением почтовых самолётов и дирижаблей во все концы света, включая Лос-Анжелос и Мельбурн'];
 textStagesCarouselFirstLine.innerHTML = textStages[0] 
 let i = 0;
@@ -25,6 +28,13 @@ circleWhiteSecondLine.innerHTML = arrNumbersStagesSecondLine[0];
 
 let levelList = document.getElementById('level-list');
 levelList.src = "img/active.png";
+
+
+let arrNumbersStagesFirstLine = ['1', '3', '4', '6', '7'];
+circleWhiteFirstLine.innerHTML = arrNumbersStagesFirstLine[0];
+
+let arrNumbersStagesSecondLine = ['2', ' ', '5', ' ', ' '];
+circleWhiteSecondLine.innerHTML = arrNumbersStagesSecondLine[0];
 
 
 function next() {
@@ -47,11 +57,14 @@ function next() {
     } else {
         buttonNext.src = "img/button-right.png";
     }
+    circleWhiteFirstLine.innerHTML = arrNumbersStagesFirstLine[i];
+    circleWhiteSecondLine.innerHTML = arrNumbersStagesSecondLine[i];
 
     a++
     if (a == textStageseSecondLine.length) {
         a = 0;
     }
+    textStagesCarouselSecondLine.innerHTML = textStageseSecondLine[a];
     textStagesCarouselSecondLine.innerHTML = textStageseSecondLine[a];
 
     if (a == 1 || a == 3 || a == 4) {
@@ -59,7 +72,13 @@ function next() {
     } else {
         circleWhiteSecondLine.style.visibility = 'visible';
     }
+    if (a == 1 || a == 3 || a == 4) {
+        circleWhiteSecondLine.style.visibility = 'hidden';
+    } else {
+        circleWhiteSecondLine.style.visibility = 'visible';
+    }
 }
+
 
 function back() {
     i--
@@ -81,6 +100,20 @@ function back() {
     } else {
         buttonNext.src = "img/button-right.png";
     }
+
+    a--
+    if (a == -1) {
+        a = textStageseSecondLine.length - 1;
+    }
+    textStagesCarouselSecondLine.innerHTML = textStageseSecondLine[a];
+
+    if (a == 1 || a == 3 || a == 4) {
+        circleWhiteSecondLine.style.visibility = 'hidden';
+    } else {
+        circleWhiteSecondLine.style.visibility = 'visible';
+    }
+    circleWhiteFirstLine.innerHTML = arrNumbersStagesFirstLine[i];
+    circleWhiteSecondLine.innerHTML = arrNumbersStagesSecondLine[i];
 
     a--
     if (a == -1) {
