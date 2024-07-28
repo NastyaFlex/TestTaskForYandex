@@ -23,8 +23,12 @@ circleWhiteFirstLine.innerHTML = arrNumbersStagesFirstLine[0];
 let arrNumbersStagesSecondLine = ['2', ' ', '5', ' ', ' '];
 circleWhiteSecondLine.innerHTML = arrNumbersStagesSecondLine[0];
 
-let levelList = document.getElementById('level-list');
-levelList.src = "img/active.png";
+let levelOne = document.getElementById('level-one');
+levelOne.style.background = '#313131';
+let levelTwo = document.getElementById('level-two');
+let levelThree = document.getElementById('level-three');
+let levelFour = document.getElementById('level-four');
+let levelFive = document.getElementById('level-five');
 
 function next() {
     i++
@@ -48,6 +52,23 @@ function next() {
     }
     circleWhiteFirstLine.innerHTML = arrNumbersStagesFirstLine[i];
     circleWhiteSecondLine.innerHTML = arrNumbersStagesSecondLine[i];
+
+    if (i == 1) {
+        levelOne.style.background = '#D9D9D9';
+        levelTwo.style.background = '#313131';
+    } else if (i == 2) {
+        levelThree.style.background = '#313131';
+        levelTwo.style.background = '#D9D9D9';
+    } else if (i == 3) {
+        levelFour.style.background = '#313131';
+        levelThree.style.background = '#D9D9D9';
+    } else if (i == 4) {
+        levelFive.style.background = '#313131';
+        levelFour.style.background = '#D9D9D9';
+    } else {
+        levelOne.style.background = '#313131';
+        levelFive.style.background = '#D9D9D9';
+    }
 
     a++
     if (a == textStageseSecondLine.length) {
@@ -87,6 +108,23 @@ function back() {
         buttonNext.src = "img/button-right-disable.png";
     } else {
         buttonNext.src = "img/button-right.png";
+    }
+
+    if (i == 4) {
+        levelFive.style.background = '#313131';
+        levelOne.style.background = '#D9D9D9';
+    } else if (i == 3) {
+        levelFive.style.background = '#D9D9D9';
+        levelFour.style.background = '#313131';
+    } else if (i == 2) {
+        levelFour.style.background = '#D9D9D9';
+        levelThree.style.background = '#313131';
+    } else if (i == 1) {
+        levelThree.style.background = '#D9D9D9';
+        levelTwo.style.background = '#313131';
+    } else if (i == 0) {
+        levelTwo.style.background = '#D9D9D9';
+        levelOne.style.background = '#313131';
     }
 
     a--
