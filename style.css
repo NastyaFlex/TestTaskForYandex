@@ -321,6 +321,9 @@ body {
     .block-session-text {
         font-size: 36px;
     }
+    .block-stages-phone {
+        display: none;
+    }
 }
 @media (max-width: 1366px) {
     .left-indentation {
@@ -498,7 +501,6 @@ body {
         padding-top: 70px;
         margin-top: -75px;
         margin-top: -75px;
-        /*background-image: url(img/small-background.png);*/
     }
     .carousel-first-line, .carousel-second-line {
         display: flex;
