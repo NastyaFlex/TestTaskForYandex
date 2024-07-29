@@ -498,6 +498,7 @@ body {
         padding-top: 70px;
         margin-top: -75px;
         margin-top: -75px;
+        /*background-image: url(img/small-background.png);*/
     }
     .carousel-first-line, .carousel-second-line {
         display: flex;
@@ -544,5 +545,32 @@ body {
         margin-left: 12px;
         margin-right: 15px;
         display: flex;
+    }
+    .button-back {
+        z-index: 1;
+        position: relative;
+    }
+    .button-next {
+        z-index: 1;
+        position: relative;
+    }
+    #block-button-right {
+        width: 36px;
+        height: 36px;
+        border-radius: 100px;
+        z-index: 2;
+        position: absolute;
+        margin-left: 130px;
+    }
+    #block-button-left {
+        width: 36px;
+        height: 36px;
+        border-radius: 100px;
+        z-index: 2;
+        position: absolute;
+        margin-left: -133px;
+    }
+    #block-button-right {
+        display: none;
     }
 }

@@ -30,6 +30,9 @@ let levelThree = document.getElementById('level-three');
 let levelFour = document.getElementById('level-four');
 let levelFive = document.getElementById('level-five');
 
+let blockButtonRight = document.getElementById('block-button-right');
+let blockButtonLeft = document.getElementById('block-button-left');
+
 function next() {
     i++
     if (i == textStages.length) {
@@ -47,8 +50,13 @@ function next() {
 
     if (i == 4) {
         buttonNext.src = "img/button-right-disable.png";
+        buttonNext.style.zIndex = 1;
+        blockButtonRight.style.display = 'inherit';
+        blockButtonRight.style.zIndex = 2;
     } else {
         buttonNext.src = "img/button-right.png";
+        blockButtonRight.style.display = 'none';
+        blockButtonLeft.style.display = 'none';
     }
     circleWhiteFirstLine.innerHTML = arrNumbersStagesFirstLine[i];
     circleWhiteSecondLine.innerHTML = arrNumbersStagesSecondLine[i];
@@ -97,16 +105,19 @@ function back() {
     textStagesCarouselFirstLine.innerHTML = textStages[i];
     circleWhiteFirstLine.innerHTML = arrNumbersStagesFirstLine[i];
     circleWhiteSecondLine.innerHTML = arrNumbersStagesSecondLine[i];
-
+    
     if (i > 0) {
         buttonBack.src = "img/button-left.png";
     } else {
         buttonBack.src = "img/button-left-disable.png";
+        blockButtonLeft.style.display = 'inherit';
     }
-
+    
     if (i == 4) {
         buttonNext.src = "img/button-right-disable.png";
+        blockButtonRight.style.display = 'none';
     } else {
+        blockButtonRight.style.display = 'none';
         buttonNext.src = "img/button-right.png";
     }
 
