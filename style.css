@@ -338,6 +338,7 @@ body {
     font-family: 'Golos-Regular';
     color: #313131;
     opacity: 0.5;
+    margin-top: -20px;
 }
 #button-detail {
     border: 2px solid #3057A2;
