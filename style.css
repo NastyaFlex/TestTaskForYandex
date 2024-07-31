@@ -328,10 +328,15 @@ body {
     width: 44px;
     height: 44px;
 }
-#name-man {
+#name-man1, #name-man2,#name-man3 {
     font-size: 24px;
     font-family: 'Golos';
     color: #313131;
+}
+.block-slide-numbers {
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 #status-man {
     font-size: 20px;
