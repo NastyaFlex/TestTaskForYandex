@@ -338,7 +338,7 @@ body {
     margin-left: 10px;
     margin-right: 10px;
 }
-#status-man {
+#status-man1, #status-man2, #status-man3 {
     font-size: 20px;
     font-family: 'Golos-Regular';
     color: #313131;
@@ -363,6 +363,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+#slide-numbers, .number-participants {
+    font-family: 'Golos-Regular';
+    color: #313131;
+    font-size: 16px; 
+}
+.number-participants {
+    opacity: 0.6;
 }
 @media (min-width: 376px) {
     .information-for-phone {

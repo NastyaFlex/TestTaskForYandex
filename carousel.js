@@ -11,6 +11,15 @@ nameMan1.innerHTML = arrNameFirstLine[0];
 nameMan2.innerHTML = arrNameFirstLine[1];
 nameMan3.innerHTML = arrNameFirstLine[2];
 
+let statusMan1 = document.getElementById('status-man1');
+let statusMan2 = document.getElementById('status-man2');
+let statusMan3 = document.getElementById('status-man3');
+let arrStatusMen = ['Чемпион мира по шахматам', 'Гроссмейстер'];
+
+statusMan1.innerHTML = arrStatusMen[0];
+statusMan2.innerHTML = arrStatusMen[0];
+statusMan3.innerHTML = arrStatusMen[0];
+
 let step = 0;
 
 function bigButtonNext() {
@@ -22,15 +31,19 @@ function bigButtonNext() {
         nameMan1.innerHTML = arrNameSecondLine[0];
         nameMan2.innerHTML = arrNameSecondLine[1];
         nameMan3.innerHTML = arrNameSecondLine[2];
-        slideNumbers.innerText = '3';
+        statusMan3.innerHTML = arrStatusMen[1];
+        slideNumbers.innerText = '6';
     } else {
         nameMan1.innerHTML = arrNameFirstLine[0];
         nameMan2.innerHTML = arrNameFirstLine[1];
         nameMan3.innerHTML = arrNameFirstLine[2];
-        slideNumbers.innerText = '6';
+        statusMan3.innerHTML = arrStatusMen[0];
+        slideNumbers.innerText = '3';
     }
     console.log(step);
 }
+
+setInterval(bigButtonNext, 4000);
 
 function bigButtonBack() {
     step--;
@@ -41,11 +54,13 @@ function bigButtonBack() {
         nameMan1.innerHTML = arrNameSecondLine[0];
         nameMan2.innerHTML = arrNameSecondLine[1];
         nameMan3.innerHTML = arrNameSecondLine[2];
+        statusMan3.innerHTML = arrStatusMen[1];
         slideNumbers.innerText = '6';
     } else {
         nameMan1.innerHTML = arrNameFirstLine[0];
         nameMan2.innerHTML = arrNameFirstLine[1];
         nameMan3.innerHTML = arrNameFirstLine[2];
+        statusMan3.innerHTML = arrStatusMen[0];
         slideNumbers.innerText = '3';
     }
     console.log(step)
