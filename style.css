@@ -319,7 +319,8 @@ body {
 .head-articipants-tournament {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    column-gap: 450px;
 }
 .participants-tournament-buttons {
     display: flex;
@@ -357,7 +358,8 @@ body {
 }
 .carousel-participants-tournament {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    column-gap: 180px;
 }
 .participants-tournament {
     display: flex;
@@ -396,6 +398,9 @@ body {
     .information-for-window {
         display: flex;
         justify-content: center;
+    }
+    .block-participants-tournament {
+        display: none;
     }
 }
 @media (max-width: 375px) {
