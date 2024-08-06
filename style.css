@@ -374,6 +374,9 @@ body {
 .number-participants {
     opacity: 0.6;
 }
+.block-participants-tournament, .block-participants-tournament-phone {
+    margin-bottom: 50px;
+}
 @media (min-width: 376px) {
     .information-for-phone {
         display: none;
