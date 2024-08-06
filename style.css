@@ -329,7 +329,7 @@ body {
     width: 44px;
     height: 44px;
 }
-#name-man1, #name-man2,#name-man3 {
+#name-man1, #name-man2,#name-man3, #name-man-phone {
     font-size: 24px;
     font-family: 'Golos';
     color: #313131;
@@ -339,7 +339,7 @@ body {
     margin-left: 10px;
     margin-right: 10px;
 }
-#status-man1, #status-man2, #status-man3 {
+#status-man1, #status-man2, #status-man3, #status-man-phone {
     font-size: 20px;
     font-family: 'Golos-Regular';
     color: #313131;
@@ -385,6 +385,9 @@ body {
         font-size: 36px;
     }
     .block-stages-phone {
+        display: none;
+    }
+    .block-participants-tournament-phone {
         display: none;
     }
 }
@@ -640,5 +643,26 @@ body {
     }
     #block-button-right {
         display: none;
+    }
+    .participants-tournament-text-phone {
+        font-size: 36px;
+        font-family: 'Merriweather';
+    }
+    .carousel-participants-tournament-phone {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .participants-tournament-buttons-phone {
+        display: flex;
+        margin-top: 30px;
+    }
+    #slide-numbers-phone, .number-participants-phone {
+        color: #313131;
+        font-family: 'Golos-Regular';
+        font-size: 16px;
+    }
+    .number-participants-phone {
+        opacity: 0.6;
     }
 }

@@ -1,3 +1,4 @@
+// desktop version
 let slideNumbers = document.getElementById('slide-numbers');
 slideNumbers.innerText = '3';
 
@@ -20,6 +21,16 @@ statusMan1.innerHTML = arrStatusMen[0];
 statusMan2.innerHTML = arrStatusMen[0];
 statusMan3.innerHTML = arrStatusMen[0];
 
+//phone version
+let nameManPhone = document.getElementById('name-man-phone');
+let slideNumbersPhone = document.getElementById('slide-numbers-phone');
+let arrNames = ['Хозе-Рауль Капабланка', 'Эммануил Ласкер', 'Александр Алехин', 'Арон Нимцович', 'Рихард Рети', 'Остап Бендер'];
+let arrNumbers = ['1', '2' ,'3', '4', '5', '6'];
+let statusManPhone = document.getElementById('status-man-phone'); 
+nameManPhone.innerHTML = arrNames[0];
+slideNumbersPhone.innerHTML = arrNumbers[0];
+
+// desktop version
 let step = 0;
 
 function bigButtonNext() {
@@ -40,7 +51,6 @@ function bigButtonNext() {
         statusMan3.innerHTML = arrStatusMen[0];
         slideNumbers.innerText = '3';
     }
-    console.log(step);
 }
 
 setInterval(bigButtonNext, 4000);
@@ -63,5 +73,37 @@ function bigButtonBack() {
         statusMan3.innerHTML = arrStatusMen[0];
         slideNumbers.innerText = '3';
     }
-    console.log(step)
 }
+
+//phone version
+let stepPhone =  0;
+
+function bigButtonNextPhone() {
+    stepPhone++;
+    if (stepPhone == arrNames.length) {
+        stepPhone = 0;
+    }
+    if (stepPhone == 5) {
+        statusManPhone.innerHTML = arrStatusMen[1];
+    } else {
+        statusManPhone.innerHTML = arrStatusMen[0];
+    }
+    nameManPhone.innerHTML = arrNames[stepPhone];
+    slideNumbersPhone.innerHTML = arrNumbers[stepPhone];
+}
+
+function bigButtonBackPhone() {
+    stepPhone--;
+    if (stepPhone == -1) {
+        stepPhone = arrNames.length - 1;
+    }
+    if (stepPhone == 5) {
+        statusManPhone.innerHTML = arrStatusMen[1];
+    } else {
+        statusManPhone.innerHTML = arrStatusMen[0];
+    }
+    nameManPhone.innerHTML = arrNames[stepPhone];
+    slideNumbersPhone.innerHTML = arrNumbers[stepPhone];
+}
+
+setInterval(bigButtonNextPhone, 4000);
