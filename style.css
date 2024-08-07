@@ -21,6 +21,8 @@ body {
 .bock-header {
     display: flex;
     align-items: center;
+    justify-content: center;
+    margin-left: -1032px;
     padding-top: 11px;
 }
 .name-logo {
@@ -419,10 +421,16 @@ body {
     .block-participants-tournament {
         display: none;
     }
+    .bock-header {
+        margin-left: -980px;
+    }
 }
 @media (max-width: 375px) {
     .left-indentation {
         margin-left: 20px;
+    }
+    .bock-header {
+        margin-left: -100px;
     }
     .offer-small-text-1 {
         margin-left: 0px;
