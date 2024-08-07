@@ -269,6 +269,7 @@ body {
     background-color: #E9DED4;
     padding-top: 20px;
     display: flex;
+    background-image: url(img/background2.png);
 }
 .circle-stage {
     border-radius: 100px;
@@ -388,14 +389,14 @@ body {
 }
 .footer {
     background-color: #E9DED4;
-    padding: 47px 82px 82px 47px;
+    padding: 47px 70px 82px 70px;
 }
 .footer-text {
     margin: 0;
     color: #313131;
     opacity: 0.6;
     font-family: 'Golos-Regular';
-    font-size: 28px;
+    font-size: 16px;
 }
 @media (min-width: 376px) {
     .information-for-phone {
@@ -424,9 +425,6 @@ body {
     .information-for-window {
         display: flex;
         justify-content: center;
-    }
-    .block-participants-tournament {
-        display: none;
     }
     .bock-header {
         margin-left: -980px;
@@ -706,5 +704,8 @@ body {
     }
     .footer-text {
         font-size: 16px;
+    }
+    .block-participants-tournament {
+        display: none;
     }
 }
