@@ -31,7 +31,7 @@ body {
     font-size: 16px;
 }
 .header, .block-offer {
-    background-color: #e8dcd2;
+    background-color: #E9DED4;
     background-blend-mode: overlay;
     background-image: url(img/background.png);
 }
@@ -94,6 +94,14 @@ body {
     height: 660px;
     margin-left: 64px;
     margin-bottom: 100px;
+    position: relative;
+}
+.background-yellow-circle {
+    width: 660px;
+    height: 660px;
+    border-radius: 100%;
+    background-image: url(img/background.png);
+    opacity: 0.3;
 }
 .yellow-circle {
     width: 660px;
@@ -110,7 +118,6 @@ body {
     padding-top: 44px;
 }
 .block-offer-img {
-    position: relative;
     margin-top: -160px;
 }
 .img-city {
@@ -424,6 +431,9 @@ body {
     .bock-header {
         margin-left: -980px;
     }
+    .yellow-circle {
+        overflow: hidden;
+    }
 }
 @media (max-width: 375px) {
     .left-indentation {
@@ -473,6 +483,10 @@ body {
         margin-top: 15px;
         margin-left: 28px;
         position: absolute;
+    }
+    .background-yellow-circle {
+        width: 300px;
+        height: 300px;
     }
     .img-city {
         width: 885px;
