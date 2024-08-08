@@ -33,6 +33,7 @@ body {
 .header, .block-offer {
     background-color: #E9DED4;
     background-blend-mode: overlay;
+    overflow: hidden;
     background-image: url(img/background.png);
 }
 .offer-text-1, .offer-text-2, .offer-text-3 {
@@ -385,7 +386,8 @@ body {
     opacity: 0.6;
 }
 .block-participants-tournament, .block-participants-tournament-phone {
-    margin-bottom: 50px;
+    margin-bottom: 140px;
+    margin-top: 140px;
 }
 .footer {
     background-color: #E9DED4;
@@ -604,6 +606,7 @@ body {
         padding-top: 70px;
         margin-top: -75px;
         margin-top: -75px;
+        background-image: url(img/background2.png);
     }
     .carousel-first-line, .carousel-second-line {
         display: flex;
@@ -700,12 +703,21 @@ body {
         opacity: 0.6;
     }
     .footer {
-        padding: 20px 44px 63px 44px;
+        padding: 40px 44px 63px 44px;
     }
     .footer-text {
         font-size: 16px;
     }
     .block-participants-tournament {
         display: none;
+    }
+    .information-about-session-text {
+        margin-top: -30px;
+    }
+    .block-stages-phone {
+        margin-top: 112px;
+    }
+    .block-participants-tournament-phone {
+        margin-bottom: 88px;
     }
 }
