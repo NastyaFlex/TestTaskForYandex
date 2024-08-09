@@ -639,7 +639,7 @@ body {
         justify-content: center;
         align-items: center;
         margin-top: 25px;
-        margin-left: -10px;
+        margin-left: -20px;
     }
     .level-list {
         margin-left: 2px;
@@ -715,9 +715,10 @@ body {
         margin-top: -30px;
     }
     .block-stages-phone {
-        margin-top: 112px;
+        margin-top: 124px;
     }
     .block-participants-tournament-phone {
         margin-bottom: 88px;
+        margin-top: 124px;
     }
 }
