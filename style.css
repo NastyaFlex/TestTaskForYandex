@@ -400,6 +400,9 @@ body {
     font-family: 'Golos-Regular';
     font-size: 16px;
 }
+.block-running-line {
+    overflow: hidden;
+}
 @media (min-width: 376px) {
     .information-for-phone {
         display: none;
